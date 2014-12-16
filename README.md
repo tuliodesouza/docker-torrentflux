@@ -21,7 +21,12 @@ Docker offers the option of building an image directly from a GIT repository (op
 
 ### Running
 
-docker run -p 80:80 torrentflux
+```
+docker run -d -p 8080:80 torrentflux
+```
+
+* -d: runs as daemon (background)
+* -p 8080:80: redirects connections arriving on port 8080 of the host OS to port 80 of the container
 
 #### Extra (optional) options
 
